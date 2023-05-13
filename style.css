@@ -1,0 +1,77 @@
+body {
+    background-color: #552380;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #c8aeae;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+}
+
+
+button {
+    width: 128px;
+    height: 128px;
+    outline: none;
+    /* margin: 6px; */
+    background-color: #b156fe;
+    color: white;
+    /* border: none; */
+    /* border-radius: 3px; */
+    /* padding: 50px; */
+    font-size: 100px;
+    
+
+}
+/* button:active {
+    border-style: outset;
+} */
+button:hover {
+    background-color: blueviolet;
+}
+/* .status{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    user-select: none;  
+} */
+.status{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black    ;
+}
+
+
+.status button{
+    height: 18px;
+    width: 22px;
+    font-size: 10px;
+    float: right;
+    margin-right: 10px;
+}
+
+input[type="button"] {
+    display: block;
+    display: block;
+    padding: 8px 34px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #b156fe;
+    border: none;
+    margin-left: 132px;
+    margin-top: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: blueviolet;
+}
