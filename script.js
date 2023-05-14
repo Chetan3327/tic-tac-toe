@@ -2,7 +2,13 @@ let turn = 0
 let invisible = "‎";
 const stat = document.getElementById("status")
 let player = document.getElementById("player");
-let btns = document.querySelectorAll("button")
+let btns = document.querySelectorAll("button");
+
+let musicPlayer = document.getElementById("musicPlayer")
+musicPlayer.play()
+let soundPlayer = document.getElementById("soundPlayer")
+
+
 btns.forEach(btn => {
     btn.addEventListener("click", () => {
         btn.innerText = (turn%2 == 0)?"X":"O"
@@ -35,6 +41,8 @@ function check(a,b,c){
         if(btns[a].innerText != invisible){
             stat.innerText = (btns[a].innerText + " won")
             btns.forEach(btn => btn.disabled = "disabled")
+            musicPlayer.pause()
+            soundPlayer.play()
         }
     }
     checkDraw()
