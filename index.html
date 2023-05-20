@@ -22,13 +22,14 @@
 
 
         button {
+            border: 5px black solid;
             width: 128px;
             height: 128px;
             outline: none;
             /* margin: 6px; */
             background-color: #b156fe;
             color: white;
-            /* border: none; */
+            border: none;
             /* border-radius: 3px; */
             /* padding: 50px; */
             font-size: 100px;
@@ -71,7 +72,7 @@
             color: #fff;
             background-color: #b156fe;
             border: none;
-            margin-left: 132px;
+            /* margin-left: 132px; */
             margin-top: 6px;
             border-radius: 8px;
             cursor: pointer;
@@ -81,15 +82,27 @@
             background-color: blueviolet;
         }
 
+        input[type="button"] .play{
+            width:40px;
+        }
+        .controls{
+            display: flex;
+            justify-content: space-around;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <div class="status" id="status">Player <span id="player">X</span> Turn </div>
         <button>‎</button><button>‎</button><button>‎</button><br><button>‎</button><button>‎</button><button>‎</button><br><button>‎</button><button>‎</button><button>‎</button><br>
-        <input type="button" value="restart" onclick="location.reload()">
-        <audio id="musicPlayer" src="happy.mp3" loop></audio>
-        <audio id="soundPlayer" src="Well Done CCBY3.ogg" loop></audio>
+        <div class="controls">
+            <input type="button" value="Restart" onclick="restart()">
+            <input type="button" class="play" value="Play Sound" onclick="playmusic()" accesskey="m">
+        </div>
+        <audio id="musicPlayer" src="happy.mp3" allow="autoplay" autoplay loop></audio>
+        <!-- <iframe src="happy.mp3" id="musicPlayer" allow="autoplay">         -->
+        <audio id="soundPlayer" src="Well Done CCBY3.ogg"></audio>
     </div>
     
 </body>
